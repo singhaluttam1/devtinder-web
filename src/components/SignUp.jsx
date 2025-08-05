@@ -56,6 +56,7 @@ const SignUp = ({ setShowSignUp }) => {
         userData,
         { withCredentials: true }
       )
+      localStorage.setItem("user", JSON.stringify(user));
       dispatch(addUser(res.data.data))
 
       navigate("/profile")

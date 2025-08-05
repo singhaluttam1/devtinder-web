@@ -34,9 +34,12 @@ const Body = () => {
   }, [userData])
 
   return (
-    <div>
+    <div className='min-h-screen flex flex-col bg-base-200'> 
       <Navbar />
+      <div className='flex-grow pb-20'>
+
       <Outlet />
+      </div>
       <Footer />
     </div>
   )
